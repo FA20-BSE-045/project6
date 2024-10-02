@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire section */
+.container {
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-size: cover;
+}
+
+/* Content wrapper to center the image and text */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+}
+
+/* Styling for the image section with animation */
+.image-section {
+    animation: slideUp 2s ease-out forwards; /* Apply animation */
+}
+
+.image-section img {
+    max-width: 450px;
+    height: 600px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/* Styling for the text section */
+.text-section {
+    max-width: 600px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.text-section h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-section p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.text-section button {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-section button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Animation: Slide image up from bottom to center */
+@keyframes slideUp {
+    from {
+        transform: translateY(200px); /* Start from below the container */
+        opacity: 0; /* Start with no visibility */
+    }
+    to {
+        transform: translateY(0); /* Slide to original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/*---------------------Section-2-----------------------*/
+
+.home-repairs-container {
+    text-align: center;
+    padding: 50px;
+    padding-top: 50px;
+    background-color: #292D33;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-left: 150px;
+    padding-right: 100px;
+
+  }
+  
+  .home-repairs-container h1 {
+    font-size: 55px;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    justify-content: center;
+    padding-left: 80px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    
+  }
+  
+  .description {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 30px;
+  }
+  
+  .card {
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    height: 181px;
+    width: 181px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 8px solid #FFCA01;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .card p {
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+  }
+  
+  /*---------------------Section-3-----------------------*/
+
+  .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color:#FFCA01; /* Background color */
+    color: black;
+    font-family: Arial, sans-serif;
+    height: 90vh;
+  }
+  
+  .image-container img {
+    width: 700px; /* Adjust based on your image size */
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+  }
+  
+  .text-container {
+    max-width: 600px;
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 20px; 
+  }
+  
+  .service-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-list li span {
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  /*---------------------Section-4-----------------------*/
+
+  /* Main container for the section */
+  .our-services-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 20px 20px 50px;
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5300a1bcd1745d6e88c31832/t4.png");
+  }
+  
+  .our-services-container h2 {
+    font-size: 55px;
+    font-family: "Titillium Web", sans-serif;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .service-cards-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+
+  .service-cards-wrapper {
+    animation: slide 2s ease-out forwards; /* Apply animation */
+}
+/* Animation: Slide image up from bottom to center */
+@keyframes slide {
+    from {
+        transform: translateY(200px); /* Start from below the container */
+        opacity: 0; /* Start with no visibility */
+    }
+    to {
+        transform: translateY(0); /* Slide to original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+  
+  .individual-service-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .individual-service-card h3 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .individual-service-card p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .service-icon img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    background-color: #FFCA02;
+    border-radius: 50px;
+    padding: 15px;
+  }
+  
+  .service-more-link {
+    color: #fdd835;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #fdd835;
+    padding-bottom: 2px;
+    transition: color 0.3s;
+  }
+  
+  .service-more-link:hover {
+    color: #333;
+  }
+
+  /*---------------------Media-Query-----------------------*/
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        height: 100%;
+    }
+
+    .content {
+        flex-direction: column; /* Ensure content is also stacked vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .text-section {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+        order: 1; /* Position this section first */
+    }
+
+    .image-section {
+        order: 2; /* Position this section second */
+        margin-top: 20px; /* Add margin to separate sections */
+    }
+
+    .image-section img {
+        max-width: 300px;
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 0; /* Reset margin */
+        margin-left: 0;
+    }
+
+    .text-section h1 {
+        font-size: 35px; /* Adjust font size */
+        
+    }
+
+    .text-section p {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+  /* Mobile Devices */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 300px; /* Adjust based on your image size */
+        margin-bottom: 20px;
+      }
+    .home-repairs-container {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .home-repairs-container h1 {
+        font-size: 30px;
+        padding-left: 10px;
+      }
+      .home-repairs-container p {
+        font-size: 10px;
+      }
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .card {
+        width: 100%; /* Full width for cards */
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack services vertically */
+        padding: 20px;
+        height: auto; /* Allow height to adjust */
+    }
+
+    .text-container h1 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .text-container p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .service-list {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .our-services-container {
+        padding: 50px 20px; /* Adjust padding */
+    }
+    .our-services-container h2 {
+       font-size: 40px;
+    }
+
+    .service-cards-wrapper {
+        margin-left: 0; /* Remove left margin */
+        justify-content: center; /* Center the cards */
+    }
+
+    .individual-service-card {
+        width: 90%; /* Full width for service cards */
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 40px;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .text-section {
+        max-width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px;
+    }
+
+    .home-repairs-container {
+        padding: 40px;
+    }
+
+    .cards-container {
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack services vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .text-container h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .text-container p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .our-services-container {
+        padding: 60px 20px; /* Adjust padding */
+    }
+
+    .service-cards-wrapper {
+        margin-left: 0; /* Remove left margin */
+        justify-content: center; /* Center the cards */
+    }
+}

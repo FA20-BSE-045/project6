@@ -273,7 +273,7 @@ p {
     line-height: 1.6;
 }
 
-.service-item::before {
+.service-it::before {
     content: "";
     position: absolute;
     top: -5px;
@@ -284,18 +284,18 @@ p {
 }
 
 @media (max-width: 768px) {
-    .services-wrapper {
+    .services-wrap {
         flex-direction: column;
         align-items: center;
     }
 
-    .service-item {
+    .service-it {
         width: 100%;
         max-width: 350px;
     }
 }
 
-  /*---------------------Section-4-----------------------*/
+  /*---------------------Section-5-----------------------*/
 
   /* Main container for the section */
   .our-services-container {

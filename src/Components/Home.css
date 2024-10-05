@@ -225,13 +225,81 @@ body {
     font-weight: bold;
     margin-right: 10px;
   }
+  /*---------------------Section-4-----------------------*/
+.repair-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-it {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-top: 5px solid #ffcc00;
+}
+
+.service-i {
+    background-color: #ffcc00;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto 10px auto;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
 
   /*---------------------Section-4-----------------------*/
 
   /* Main container for the section */
   .our-services-container {
     text-align: center;
-    margin-top: 50px;
     padding: 100px 20px 20px 50px;
     background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5300a1bcd1745d6e88c31832/t4.png");
   }

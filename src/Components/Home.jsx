@@ -93,6 +93,27 @@ const Home = () => {
       </div>
     </div>
 
+<section class="repair-services">
+        <h1>Home Repair Services</h1>
+        <div class="services-wrap">
+            <div class="service-it">
+                <div class="service-i"></div>
+                <h2>Kitchen Repair</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="service-it">
+                <div class="service-i"></div>
+                <h2>Grout Repair</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="service-it">
+                <div class="service-i"></div>
+                <h2>Countertop Repair</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
 <section className="our-services-container">
       <h2>Our Services</h2>
       <div className="service-cards-wrapper">
